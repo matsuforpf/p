@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="奴雁社のお問合せページです。">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex , nofollow" />
+<title>お問合せ - 架空のサイト</title>
+<link rel="icon" href="../favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/contact.css">
+<!--<script src="../js/jquery-3.7.0.min.js"></script>
+<script src="../js/script.js"></script>-->
+</head>
+<body id="contact">
+<div class="hf">
+	<header>
+		<h1><a href="../index.html"><img src="../images/newlogo.png" alt="奴雁社" width="310" height="77"></a></h1>
+		<input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+		<label for="navToggle" class="btn-burger"><img src="../images/burger.svg" alt="ハンバーガーボタン" width="35" height="35"></label>
+		<nav>
+			<ul>
+				<li class="menu2"><a href="../about/index.html" class="animate-link">会社案内</a></li>
+				<li class="menu3"><a href="../books/index.html" class="animate-link">新刊案内</a></li>
+				<li class="menu4"><a href="../news/index.html" class="animate-link">お知らせ</a></li>
+				<li class="menu5"><a href="../contact/index.html" class="animate-link">お問合せ</a></li>
+			</ul>
+		</nav>
+		<h2>お問合せ(実際には送信されません)</h2>
+	</header>
+</div>
+<div class="container main">
+	<main>
+		<p>以下の入力フォームに必要事項を入力し、&lt;送信&gt;ボタンをクリックしてください。</p>
+		<form action="../thanx/index.html" method="post">
+			<table border="0">
+				<tr>
+					<th>お名前</th>
+					<td><input type="text" name="name" value="" required="required"></td>
+				</tr>
+				<tr>
+					<th>ふりがな</th>
+					<td><input type="text" name="hurigana" value="" required="required"></td>
+				</tr>
+				<tr>
+					<th>メールアドレス</th>
+					<td><input type="email" name="email" value ="" required="required"></td>
+				</tr>
+				<tr>
+					<th class="radio">個人情報の利用</th>
+					<td><input type="radio" name="privacy" value="yes" id="rd1"><label for="rd1" required="required">同意する</label>
+					<input type="radio" name="privacy" value="no" id="rd2" required="required"><label for="rd2">同意しない</label></td>
+				</tr>
+				<tr>
+					<th class="radio">ニュースレター</th>
+					<td><input type="radio" name="newsletter" value="yes" id="rd3" required="required"><label for="rd3">受け取る</label><input type="radio" name="newsletter" value="yes" id="rd4" required="required"><label for="rd4">受け取らない</label></td>
+				</tr>
+				<tr>
+					<th>お問い合わせの内容</th>
+					<td><textarea name="question" cols="50" rows="8" required="required"></textarea></td>
+				</tr>
+			</table>
+			<p>
+				<button type="submit" value="送信する" class="btn bgleft"><span>送信</span></button>
+			</p>
+		</form>
+	</main>
+</div><!-- .container -->
+<footer>
+	<div class="container">
+		<p>株式会社 奴雁社</p>
+		<p>&#12306;1131-0011</p>
+		<p>東京都半京区ポン郷1-3-3</p>
+		<ul>
+			<li class="menu1"><a href="../index.html" class="animate-link white">トップ</a></li>
+			<li class="menu2"><a href="../about/index.html" class="animate-link white">会社案内</a></li>
+			<li class="menu3"><a href="../books/index.html" class="animate-link white">新刊案内</a></li>
+			<li class="menu4"><a href="../news/index.html" class="animate-link white">お知らせ</a></li>
+			<li class="menu5"><a href="../contact/index.html" class="animate-link white">お問合せ</a></li>
+		</ul>
+		<small>&copy;2023 Dogansha. All Rights Reserved.</small>
+	</div><!-- .container-->
+</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+.main {
+	line-height: 2;
+}
+h2 {
+	background: #edaf80;
+}
+h3 {
+	font-size: 1.5em;
+	padding: 1em 0 0.3em;
+}
+.flexArea img,
+.flexArea iframe {
+	padding-top: 0.5em;
+}
+h3::before {
+	content: "";
+	display: inline-block;
+	width: 3.4375rem;
+	height: 3rem;
+	background: url("../images/ganhead2.png") no-repeat;
+	background-size: contain;
+	vertical-align: center;
+	position: relative;
+	top: 0.5em;
+	margin-right: 0.5em;
+	/*content: url("../images/ganhead2.png");*/
+}
+h4 {
+	font-size: 1.2em;
+}
+dt {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.flexArea {
+	justify-content: space-around;
+}
+.flexArea div {
+	width: 45%;
+	text-align: center;
+}
+.flex2 {
+	flex-direction: row-reverse;
+}
+.flexArea dl {
+	text-align: left;
+}
+.flexArea dd {
+	margin-top: -2.2em;
+	margin-left: 6em;
+}
+iframe {
+	height: 300px;
+}
+@media screen and (max-width: 700px){
+	h3 {
+		padding-left: 1rem;
+	}
+	.flexArea div {
+		width: 90%;
+		margin: auto;
+	}
+	.flexArea dd {
+		margin: 0;
+	}
+}

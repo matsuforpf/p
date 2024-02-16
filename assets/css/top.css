@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.info {
+	width: 80%;
+	margin: 0 auto;
+}
+.info .flexArea div {
+	width: 28.75%;
+	background: #fff;
+	color: #000;
+	margin-bottom: 10px;
+}
+.flexArea div img {
+	width: 100%;
+	height: 100%;
+}
+.more {
+	text-align: right;
+}
+.banners {
+	text-align: center;
+}
+.banners li {
+	margin-bottom: 3%;
+	align-items: space-between;
+}
+

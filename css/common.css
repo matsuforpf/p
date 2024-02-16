@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+.flexArea {
+	display: flex;
+	flex-wrap: wrap;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	line-height: 1.5;
+	color: #222;
+}
+.container {
+	width: 100%;
+	max-width: 1366px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.main {
+	padding-bottom: 200px;
+	background: url("../images/yakko3.png") 5% 100% / 7% no-repeat, url("../images/charisma3.png") 95% 100% / 15% no-repeat;
+	width: 80%;
+}
+.hf {
+	margin: o auto;
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+a {
+	color: #222;
+	text-decoration: none;
+}
+.animate-link {
+  text-decoration: none; /* デフォルトの下線を非表示にする */
+  background-image: linear-gradient(90deg, #222, #222); /* 線の色 */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* 線の起点を左・下に設定 */
+  background-size: 0 2px; /* 線の横幅を0、縦幅を1pxに */
+  transition: background-size 0.5s; /* 線を伸ばすアニメーション実行時間を指定 */
+  display: inline-block;
+}
+
+.animate-link:hover {
+  background-size: 100% 2px; /* 線の横幅を100%にする */
+	font-weight: bold;
+}
+.white {
+  background-image: linear-gradient(90deg, #fff, #fff); /* 線の色 */
+}
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+nav {
+	text-align: right;
+	position: relative;
+	padding-right: 1rem;
+	bottom: 50px;
+	width: 55%;
+	margin: 0 0 0 auto;
+}
+h1 {
+	width: 44%;
+	padding-top: 20px;
+	z-index: 5;
+}
+.btn-burger img {
+	display: none;
+}
+.nav-toggle {
+	display: none;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 1em 0;
+}
+.splide__slide img {
+  height: auto;
+  width: 100%;
+}
+.new,
+.flexArea {
+	display: flex;
+	justify-content: space-between;
+}
+footer {
+	text-align: center;
+	color: #fff;
+	background: #06c9ce;
+	line-height: 2;
+	padding: 1rem 0;
+}
+footer a {
+	color: #fff;
+}
+header nav li {
+	padding-left: 1.5rem;
+	color: #5b5550;
+}
+header li,
+footer li {
+	display: inline-block;
+}
+/*header li+li::before,*/
+footer li+li::before {
+	content: " | ";
+}
+#top header ul .menu1 a,
+#about header ul .menu2 a,
+#books header ul .menu3 a,
+#news header ul .menu4 a,
+#contact header ul .menu5 a,
+#top footer ul .menu1 a,
+#about footer ul .menu2 a,
+#books footer ul .menu3 a,
+#news footer ul .menu4 a,
+#contact footer ul .menu5 a {
+	font-weight: bold;
+}
+.btn{
+	/*アニメーションの起点とするためrelativeを指定*/
+	position: relative;
+	overflow: hidden;
+	/*ボタンの形状*/
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #555;/* ボーダーの色と太さ */
+    /*padding: 10px 30px;*/
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color:#222;
+}
+
+.btn:hover span{
+  color:#222;
+}
+
+/*== 背景が流れる（左から右） */
+.bgleft::before {
+  content: '';
+    /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    /*色や形状*/
+  background:#84949b;/*背景色*/
+  width: 100%;
+  height: 100%;
+    /*アニメーション*/
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.bgleft:hover::before{
+  transform-origin:left top;
+  transform:scale(1, 1);
+}
+@media screen and (max-width: 700px){
+	.main {
+		padding-bottom: 20%;
+		background: url("../images/yakko3.png") 5% 100% / 10% no-repeat, url("../images/charisma3.png") 95% 100% / 25% no-repeat;
+		width: 90%;
+		margin: 0 auto;
+	}
+	h1 {
+		padding-top: 5px;
+		padding-bottom: 1em;
+		margin: 0 auto;
+	}
+	.btn-burger {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		z-index: 2;
+		display: block;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.btn-burger img {
+		display: block;
+	}
+	.nav-toggle:checked ~ .btn-burger img {
+		visibility: hidden;
+	}
+	.nav-toggle:checked ~ .btn-burger {
+		background: url("../images/close.svg") top left / 40px 35px no-repeat;
+	}
+	nav ul {
+		display: block;
+	}
+	.menu2,
+	.menu3,
+	.menu4,
+	.menu5 {
+		padding-left: 0;
+	}
+	nav li {
+		width: 90%;
+		padding: 3.5% 0;
+	}
+	nav li a {
+		border: none;
+		display: block;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+	}
+	nav {
+		position: fixed;
+		left: -200%;
+		text-align: center;
+		padding-bottom: 1em;
+		padding-right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.nav-toggle:checked ~ nav {
+		position: relative;
+		left: 0%;
+		transition: all 0.5s ease;
+	}
+	header li+li::before {
+		content: none;
+	}
+	.flexArea {
+		display: block;
+	}
+	footer li {
+		display: block;
+	}
+	footer li+li::before {
+		display: none;
+	}
+
+}

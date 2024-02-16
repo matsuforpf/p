@@ -1,0 +1,37 @@
+@charset "utf-8";
+h2 {
+	background: #04b593;
+}
+.main {
+	width: 80%;
+}
+h3 {
+	font-size: 1.2em;
+}
+.flexArea {
+	justify-content: space-around;
+}
+.flexArea div {
+	width: 47%;
+	padding-top: 2em;
+}
+.flexArea div a {
+	text-decoration: underline;
+	color: #4169e1 ;
+}
+.flexArea div a:hover {
+	color: #ff8c00;
+}
+@media screen and (max-width: 700px){
+	.main {
+		width: 95%;
+	}
+	.flexArea div {
+		width: 90%;
+		margin: auto;
+	}
+	.flexArea div img {
+		padding-top: 2em;
+	}
+
+}

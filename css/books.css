@@ -1,0 +1,44 @@
+@charset "utf-8";
+h2 {
+	background: #ff6;
+}
+section {
+	width: 45%;
+	position: relative;
+	padding-bottom: 2.5em;
+	padding-top: 3em;
+}
+h3 {
+	text-align: center;
+}
+dt {
+	font-size: 1.2em;
+}
+em {
+	font-weight: bold;
+}
+.right {
+	text-align: right;
+}
+.Imazon {
+	text-align: center;
+	margin: 2.5% 0 0;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+.Imazon a {
+	background: #ff6;
+	padding: 5px 1em;
+}
+.Imazon a:hover {
+	background: #f9f7dc;
+	text-decoration: none;
+	transition: .3s ease;
+}
+@media screen and (max-width: 700px){
+	section {
+		width: 90%;
+		margin: auto;
+	}
+}
